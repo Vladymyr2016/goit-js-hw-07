@@ -1,5 +1,6 @@
 * {
   box-sizing: border-box;
+  text-decoration: none;
 }
 
 body {
@@ -11,4 +12,22 @@ body {
   background-color: #fafafa;
   color: #212121;
   line-height: 1.5;
+}
+
+/*task  2 */
+
+.gallery {
+  max-width: 100%;
+  flex-shrink: 0;
+  padding: 100px, 156px;
+  outline: solid red;
+  display: flex;
+
+
+}
+
+.img-gallery {
+  width: 300px;
+  height: 300px;
+  gap: 48px;
 }
