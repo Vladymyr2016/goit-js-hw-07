@@ -24,17 +24,12 @@ const images = [
     alt: "Zebras on Zebra",
   },
 ];
-console.log(images);
 
 const ulElem = document.querySelector(".gallery");
 
-const listCart = images
-  .map(
-    (image) => `<li>
-<img src=${image.url} alt=${image.alt}>
-</li>`
-  )
-  .join("");
-console.log(listCart);
-ulElem.innerHTML = listCart;
-ulElem.classList.add(".img-gallery");
+const listCart = images.map(
+  (image) => `<li> <img src=${"image.url"} alt=${"image.alt"}></li>`
+);
+const listCart1 = listCart.join("");
+ulElem.innerHTML = listCart1;
+ulElem.classList.add("img-gallery");

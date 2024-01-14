@@ -12,27 +12,25 @@ function getRandomHexColor() {
 function onCreateBox() {
   const inputValue = Number(inputEl.value);
   if (inputValue < 1 || inputValue > 100) {
-    return alert(
-      "Ooops, something go wrong!!! The value must be less than 100"
-    );
+    return;
   }
   destroyBoxes();
   createBoxes(inputValue);
 }
 
 function createBoxes(amount) {
-  const rundomColor = getRandomHexColor;
+  const randomColor = getRandomHexColor;
   for (let i = 0; i < amount; i++) {
     const box = document.createElement("div");
     box.style.width = 30 + 10 * i + "px";
     box.style.height = 30 + 10 * i + "px";
-    box.style.backgroundColor = rundomColor();
+    box.style.backgroundColor = randomColor();
     containerBox.append(box);
   }
+  inputEl.value = "";
 }
 
 function destroyBoxes() {
-  inputEl.value = "";
   containerBox.innerHTML = "";
 }
 
