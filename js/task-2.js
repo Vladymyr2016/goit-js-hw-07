@@ -28,7 +28,7 @@ const images = [
 const ulElem = document.querySelector(".gallery");
 
 const listCart = images.map(
-  (image) => `<li> <img src=${"image.url"} alt=${"image.alt"}></li>`
+  (image) => `<li><img src="${image.url}" alt="${image.alt}"></li>`
 );
 const listCart1 = listCart.join("");
 ulElem.innerHTML = listCart1;
